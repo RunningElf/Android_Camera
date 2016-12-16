@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <!-- Include the jQuery library -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Include the jQuery Mobile library -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <title>Hello World</title>
+    </head>
+    <body>
+
+
+        <div data-role="header">
+                <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+                <h1>Welcome To My Homepage</h1>
+                <a href="page2.html" class="ui-btn ui-icon-search ui-btn-icon-left">Page 2</a>
+        </div>
+
+
+        <div data-role="main" class="ui-content">
+            <h2>by Nikkita Hirayama</h2>
+            <p>Creating a JMobile Page</p>
+
+            <table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+                <thead>
+                <tr>
+                    <th data-priority="4">StudentID</th>
+                    <th data-priority="1">Student Name</th>
+                    <th data-priority="2">Student Grade</th>
+                    <th data-priority="3">GPA</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Freedmand</td>
+                    <td>Junior</td>
+                    <td>3.5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jessica Morris</td>
+                    <td>Freshman</td>
+                    <td>2.9</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ashley Baker</td>
+                    <td>Junior</td>
+                    <td>3.4</td>
+
+                <tr>
+                    <td>4</td>
+                    <td>Rodrico Hernandez</td>
+                    <td>Senior</td>
+                    <td>3.1</td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="Grid.html" class="ui-btn ui-btn-icon-left">Grid Page</a>
+
+        <div data-role="footer">
+            <a href="page2.html" data-transition="slidefade">Slide to Page Two</a>
+        </div>
+
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
